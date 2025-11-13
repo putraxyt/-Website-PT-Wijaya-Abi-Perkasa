@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Wijaya Abi Perkasa — Developer, Renovasi & Desain Arsitek Sragen</title>
+    <meta name="description" content="PT Wijaya Abi Perkasa: Developer properti, jasa renovasi rumah, dan desain arsitek profesional (denah, interior, fasad) di Sragen, Solo Raya. Wujudkan hunian impian Anda.">
+    <meta name="author" content="PT Wijaya Abi Perkasa">
+    <meta name="keywords" content="developer sragen, renovasi rumah sragen, arsitek sragen, desain arsitek sragen, desain denah sragen, desain interior sragen, desain fasad sragen, properti sragen, kontraktor sragen, developer solo, renovasi solo, arsitek solo">
+    <link rel="canonical" href="https://www.wijayaabiperkasa.com/">
+    
+    <link rel="icon" href="https://iili.io/2rFsEV1.png" type="image/png">
+    <link rel="apple-touch-icon" href="https://iili.io/2rFsEV1.png">
+    <meta name="theme-color" content="#f59e0b">
+    <meta name="color-scheme" content="light dark">
+
+    <meta property="og:title" content="PT Wijaya Abi Perkasa — Developer, Renovasi & Arsitek Profesional Sragen">
+    <meta property="og:description" content="Solusi lengkap untuk properti, renovasi, dan desain arsitektur (denah, interior, fasad) di Sragen & Solo Raya.">
+    <meta property="og:image" content="https://i.imghippo.com/files/tPo7947xPM.png">
+    <meta property="og:url" content="https://www.wijayaabiperkasa.com/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        :root {
+            --font-primary: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+            --bg-light: #fdfdfd;
+            --text-light: #18181b;
+            --text-muted-light: #71717a;
+            --card-light: #ffffff;
+            --border-light: #e4e4e7;
+            --bg-dark: #111317;
+            --text-dark: #eaf0f6;
+            --text-muted-dark: #a1a1aa;
+            --card-dark: #1a1f26;
+            --border-dark: #2d343f;
+            
+            --primary-developer: #f59e0b;
+            --primary-dark-developer: #d97706;
+            --primary-renovasi: #30b36b;
+            --primary-dark-renovasi: #23915a;
+            --primary-arsitek: #0ea5e9;
+            --primary-dark-arsitek: #0284c7;
+
+            --container-width: 1200px;
+            --container-padding-mobile: 1rem;
+            --section-padding: clamp(60px, 8vw, 110px);
+            --grid-gap: 1.75rem;
+            --header-height: 80px;
+            --radius-sm: 12px;
+            --radius: 16px;
+            --radius-lg: 24px;
+            --shadow: 0 4px 10px rgba(0,0,0,.05);
+            --shadow-lg: 0 10px 30px rgba(0,0,0,.08);
+            --transition-speed: 0.3s;
+        }
+
+        :root {
+            --bg: var(--bg-light);
+            --text: var(--text-light);
+            --muted: var(--text-muted-light);
+            --card: var(--card-light);
+            --border: var(--border-light);
+            --primary: var(--primary-developer);
+            --primary-dark: var(--primary-dark-developer);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: var(--bg-dark);
+                --text: var(--text-dark);
+                --muted: var(--text-muted-dark);
+                --card: var(--card-dark);
+                --border: var(--border-dark);
+                --shadow: 0 8px 24px rgba(0,0,0,.3);
+                --shadow-lg: 0 12px 36px rgba(0,0,0,.5);
+            }
+        }
+        
+        body.view-developer { --primary: var(--primary-developer); --primary-dark: var(--primary-dark-developer); }
+        body.view-renovasi { --primary: var(--primary-renovasi); --primary-dark: var(--primary-dark-renovasi); }
+        body.view-arsitek { --primary: var(--primary-arsitek); --primary-dark: var(--primary-dark-arsitek); }
+        
+        *, *::before, *::after { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            font: 16px/1.7 var(--font-primary);
+            color: var(--text);
+            background-color: var(--bg);
+            -webkit-font-smoothing: antialiased;
+            transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+        }
+        body.menu-open { overflow: hidden; }
+        .container { width: min(var(--container-width), 100% - (var(--container-padding-mobile) * 2)); margin-inline: auto; }
+        .section { padding: var(--section-padding) 0; scroll-margin-top: var(--header-height); }
+        .bg-muted { background-color: color-mix(in srgb, var(--text) 2.5%, transparent); }
+        a { color: var(--primary); text-decoration: none; transition: color var(--transition-speed) ease; }
+        a:hover { color: var(--primary-dark); }
+        h1, h2, h3, h4 { line-height: 1.3; font-weight: 700; margin: 0 0 0.5rem 0; }
+        p { margin: 0; max-width: 65ch; }
+        .grid { display: grid; gap: var(--grid-gap); }
+        
+        .section-header { text-align: center; margin-bottom: 3.5rem; }
+        .section-header h2 { font-size: clamp(28px, 4vw, 38px); position: relative; padding-bottom: 0.75rem; margin-bottom: 1rem; }
+        .section-header h2::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background-color: var(--primary); border-radius: 99px; }
+        .section-header p { margin-left: auto; margin-right: auto; color: var(--muted); }
+        
+        /* [PERBAIKAN KONTEN HILANG]
+         * Konten disembunyikan by default...
+        */
+        .content-wrapper { display: none; animation: fadeIn 0.6s ease; }
+        
+        /* ...dan HANYA yang .active yang ditampilkan */
+        .content-wrapper.active { display: block; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        [data-reveal] { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease .2s; }
+        [data-reveal].visible { opacity: 1; transform: none; }
+
+        *:focus-visible {
+            outline: 3px solid var(--primary);
+            outline-offset: 3px;
+            border-radius: var(--radius-sm);
+            transition: outline-offset 0.2s ease;
+        }
+
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; padding: .9rem 1.6rem; border-radius: var(--radius-sm); border: 1px solid transparent; cursor: pointer; font-weight: 600; text-align: center; transition: all var(--transition-speed) ease; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 15px color-mix(in srgb, var(--primary) 25%, transparent); }
+        .btn.primary { background: linear-gradient(180deg, var(--primary), var(--primary-dark)); color: #fff; }
+        .btn.secondary { background: var(--card); color: var(--text); border-color: var(--border); }
+        .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow); transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease, border-color var(--transition-speed) ease; }
+        .card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: var(--primary); }
+
+        /* Layout header */
+        header#pageHeader { position: sticky; top: 0; z-index: 100; backdrop-filter: saturate(180%) blur(10px); background: color-mix(in srgb, var(--bg) 85%, transparent); border-bottom: 1px solid var(--border); height: var(--header-height); display: flex; align-items: center; transition: box-shadow 0.3s ease; }
+        header#pageHeader.scrolled { box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        @media (prefers-color-scheme: dark) { header#pageHeader.scrolled { box-shadow: 0 4px 15px rgba(0,0,0,0.2); } }
+        .nav-container { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+        .brand { display: flex; align-items: center; gap: .8rem; font-weight: 800; font-size: 1.2rem; color: var(--text); white-space: nowrap; }
+        .brand img { width: 50px; height: 50px; object-fit: cover; border-radius: var(--radius-sm); }
+        .main-nav-right { display: flex; align-items: center; gap: 1.5rem; }
+        .view-switcher { display: flex; background-color: color-mix(in srgb, var(--text) 5%, transparent); border-radius: var(--radius-sm); padding: 4px; border: 1px solid var(--border); }
+        .switch-btn { padding: 0.4rem 1rem; font-size: 0.9rem; font-weight: 500; border: none; background-color: transparent; border-radius: 10px; cursor: pointer; color: var(--muted); transition: all var(--transition-speed) ease; }
+        .switch-btn.active { background-color: var(--card); color: var(--text); box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+
+        nav.desktop-nav { list-style: none; padding: 0; margin: 0; display: none; }
+        
+        nav.desktop-nav ul { 
+            gap: .2rem; 
+            list-style: none; 
+            padding: 0; 
+            margin: 0; 
+        }
+        
+        nav.desktop-nav a { padding: .6rem .9rem; border-radius: 10px; font-weight: 500; color: var(--muted); }
+        nav.desktop-nav a:hover, nav.desktop-nav a.active { background: color-mix(in srgb, var(--primary) 12%, transparent); color: var(--primary); }
+
+        .nav-item--developer, .nav-item--renovasi, .nav-item--arsitek { display: none; }
+        
+        body.view-developer .nav-item--developer, 
+        body.view-renovasi .nav-item--renovasi,
+        body.view-arsitek .nav-item--arsitek { display: flex; }
+
+        .menu-btn { display: block; width: 44px; height: 44px; background: transparent; border: none; cursor: pointer; color: var(--text); z-index: 1001; padding: 0; position: relative; }
+        .menu-btn-burger { width: 24px; height: 2px; background: currentColor; display: block; position: relative; transition: all .3s ease-in-out; }
+        .menu-btn-burger::before, .menu-btn-burger::after { content: ''; position: absolute; width: 24px; height: 2px; background: currentColor; left: 0; transition: all .3s ease-in-out; }
+        .menu-btn-burger::before { top: -8px; }
+        .menu-btn-burger::after { top: 8px; }
+        body.menu-open .menu-btn-burger { background: transparent; transform: translateX(-10px); }
+        body.menu-open .menu-btn-burger::before { transform: rotate(45deg) translate(7px, -7px); }
+        body.menu-open .menu-btn-burger::after { transform: rotate(-45deg) translate(7px, 7px); }
+
+        @media (min-width: 1025px) { nav.desktop-nav { display: flex; } .menu-btn { display: none; } }
+
+        nav.mobile-nav, .nav-overlay { display: none; }
+        @media (max-width: 1024px) {
+            header#pageHeader .view-switcher { display: none; }
+            nav.mobile-nav, .nav-overlay { display: block; }
+            .nav-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 998; opacity: 0; pointer-events: none; transition: opacity .3s ease; }
+            body.menu-open .nav-overlay { opacity: 1; pointer-events: auto; }
+            nav.mobile-nav { display: flex; flex-direction: column; gap: 1.5rem; position: fixed; top: 0; right: 0; width: min(85vw, 350px); height: 100%; padding: 1.5rem; background: var(--bg); z-index: 1000; transform: translateX(100%); transition: transform .4s cubic-bezier(0.25, 1, 0.5, 1); }
+            body.menu-open nav.mobile-nav { transform: translateX(0); }
+            nav.mobile-nav .brand { margin-bottom: 0; }
+            nav.mobile-nav .view-switcher { margin: 0 0.5rem; }
+            .mobile-nav-main { overflow-y: auto; } 
+            .mobile-nav-main ul { list-style: none; padding: 0; margin: 0; }
+            .mobile-nav-main li { margin-bottom: 0.5rem; opacity: 0; transform: translateX(20px); transition: opacity 0.3s ease, transform 0.3s ease; }
+            body.menu-open .mobile-nav-main li { opacity: 1; transform: translateX(0); }
+            .mobile-nav-main a { display: flex; align-items: center; gap: 1rem; font-size: 1.1rem; font-weight: 500; color: var(--text); padding: 0.8rem 1rem; border-radius: var(--radius-sm); }
+            .mobile-nav-main a:hover, .mobile-nav a.active { background-color: color-mix(in srgb, var(--primary) 10%, transparent); color: var(--primary); }
+            .mobile-nav-main a i { font-size: 1rem; width: 20px; text-align: center; color: var(--muted); }
+            .mobile-nav-footer { margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+            .mobile-nav-footer .btn { width: 100%; margin-bottom: 1.5rem; }
+            .mobile-nav-socials { display: flex; justify-content: center; gap: 1.5rem; }
+            .mobile-nav-socials a { color: var(--muted); font-size: 1.2rem; }
+            
+            body.view-developer .nav-item--developer, 
+            body.view-renovasi .nav-item--renovasi,
+            body.view-arsitek .nav-item--arsitek { display: block; }
+
+            body.menu-open .mobile-nav-main li:nth-child(1) { transition-delay: 0.1s; } body.menu-open .mobile-nav-main li:nth-child(2) { transition-delay: 0.15s; } body.menu-open .mobile-nav-main li:nth-child(3) { transition-delay: 0.2s; } body.menu-open .mobile-nav-main li:nth-child(4) { transition-delay: 0.25s; } body.menu-open .mobile-nav-main li:nth-child(5) { transition-delay: 0.3s; } body.menu-open .mobile-nav-main li:nth-child(6) { transition-delay: 0.35s; } body.menu-open .mobile-nav-main li:nth-child(7) { transition-delay: 0.4s; }
+        }
+
+        .hero-grid { display: grid; align-items: center; gap: 2rem; }
+        .hero-grid h1 { font-size: clamp(34px, 5vw, 52px); }
+        .hero-grid h1 .gradient-text { background: linear-gradient(90deg, var(--primary), var(--primary-dark)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-fill-color: transparent; }
+        .hero-grid .hero-subheading { font-size: clamp(1rem, 2.5vw, 1.15rem); color: var(--muted); margin: 1rem 0 0 0; }
+        .hero-actions { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1rem; }
+        .hero-image-wrapper { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); aspect-ratio: 16 / 10; }
+        .hero-image-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+
+        .service-card { text-align: center; }
+        .service-card .icon-wrapper { margin: 0 auto 1rem; width: 60px; height: 60px; display: grid; place-items: center; border-radius: 50%; background: color-mix(in srgb, var(--primary) 12%, transparent); color: var(--primary); font-size: 1.8rem; }
+
+        .price-card { display: flex; flex-direction: column; border-radius: var(--radius-lg); overflow: hidden; position: relative; }
+        .price-card.popular { border-width: 2px; border-color: var(--primary); }
+        .price-card-header { padding: 1.5rem; }
+        .price-card .package-name { font-weight: 600; color: var(--primary); }
+        .price-card .price { font-size: clamp(2rem, 8vw, 2.5rem); font-weight: 800; margin: .5rem 0; }
+        .price-card .price-note { font-size: 0.9rem; color: var(--muted); }
+        .price-card-body { padding: 1.5rem; flex-grow: 1; background: color-mix(in srgb, var(--text) 2.5%, transparent); display: flex; flex-direction: column; }
+        .price-card-features { list-style: none; padding: 0; margin: 0; }
+        .price-card-features li { display: flex; align-items: center; gap: .7rem; margin-bottom: .8rem; }
+        .price-card-features li i.fa-check { color: var(--primary); }
+        .price-card-features li i.fa-times { color: color-mix(in srgb, var(--muted) 50%, transparent); }
+        .price-card .btn { margin-top: auto; }
+        .popular-badge { position: absolute; top: 15px; right: -40px; background: var(--primary); color: #fff; padding: .4rem 4rem; font-size: .8rem; font-weight: 700; text-align: center; transform: rotate(45deg); }
+
+        .gallery-container { max-width: 900px; margin: 0 auto; position: relative; }
+        .gallery-slider-wrapper { position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg); }
+        .gallery-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none; }
+        .gallery-track::-webkit-scrollbar { display: none; }
+        .gallery-slide { flex: 0 0 100%; scroll-snap-align: start; aspect-ratio: 16/10; }
+        .gallery-slide img { width: 100%; height: 100%; display: block; object-fit: cover; }
+        .slider-btn { position: absolute; top: 50%; transform: translateY(-50%); z-index: 10; background: rgba(255,255,255,0.8); color: var(--text); border: 1px solid var(--border); width: 44px; height: 44px; border-radius: 50%; cursor: pointer; font-size: 1.2rem; display: grid; place-items: center; transition: all .2s ease; backdrop-filter: blur(4px); }
+        .slider-btn:hover:not(:disabled) { background: var(--primary); color: #fff; }
+        .slider-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .slider-btn.prev { left: 1rem; }
+        .slider-btn.next { right: 1rem; }
+        .gallery-dots { display: flex; justify-content: center; gap: 0.75rem; margin-top: 1.5rem; }
+        .gallery-dots button { width: 10px; height: 10px; border-radius: 50%; background-color: var(--border); border: none; padding: 0; cursor: pointer; transition: background-color .3s ease, transform .3s ease; }
+        .gallery-dots button.active { background-color: var(--primary); transform: scale(1.2); }
+
+        .contact-grid-modern { display: grid; gap: 3rem; align-items: flex-start; }
+        .contact-info-item { display: flex; align-items: start; gap: 1rem; }
+        .contact-info { display: grid; gap: 2rem; }
+        .contact-icon-wrapper { flex-shrink: 0; width: 48px; height: 48px; display: grid; place-items: center; border-radius: 50%; background: color-mix(in srgb, var(--primary) 12%, transparent); color: var(--primary); font-size: 1.2rem; }
+        .contact-info-item p { margin: 0; color: var(--muted); }
+        .contact-info-item strong { color: var(--text); display: block; margin-bottom: .2rem; }
+        .map-wrapper { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--border); min-height: 300px; height: 100%; }
+        .map-wrapper iframe { width: 100%; height: 100%; border:0; }
+
+        .project-card { display: flex; flex-direction: column; height: 100%; }
+        .project-card__image { position: relative; height: 220px; border-radius: var(--radius-sm) var(--radius-sm) 0 0; overflow: hidden; }
+        .project-card__image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+        .project-card:hover .project-card__image img { transform: scale(1.05); }
+        .project-card__status { position: absolute; top: 1rem; right: 1rem; background-color: var(--primary); color: #fff; padding: 0.3rem 0.8rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600; }
+        .project-card__body { padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; }
+        .project-card__description { color: var(--muted); margin-bottom: 1.5rem; flex-grow: 1; }
+        .project-card__tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+        .project-card__tag { background: color-mix(in srgb, var(--primary) 12%, transparent); color: var(--primary); padding: 0.2rem 0.6rem; border-radius: 999px; font-size: 0.75rem; font-weight: 500; }
+
+        .process-step { text-align: center; position: relative; }
+        .process-step__number { margin: 0 auto 1rem; width: 50px; height: 50px; display: grid; place-items: center; border-radius: 50%; background: var(--primary); color: #fff; font-size: 1.2rem; font-weight: 700; box-shadow: 0 4px 10px color-mix(in srgb, var(--primary) 30%, transparent); }
+
+        .faq-item { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+        .faq-item summary { cursor: pointer; padding: 1rem 1.5rem; font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after { content: '\f078'; font-family: 'Font Awesome 6 Free'; font-weight: 900; transition: transform .2s ease; }
+        .faq-item[open] summary { color: var(--primary); }
+        .faq-item[open] summary::after { transform: rotate(180deg); }
+        .faq-answer { padding: 0 1.5rem; color: var(--muted); border-top: 1px solid var(--border); overflow: hidden; max-height: 0; transition: max-height 0.4s ease-out, padding 0.4s ease-out; }
+        .faq-item[open] .faq-answer { max-height: 250px; padding-bottom: 1.5rem; }
+
+        .calc-form input, .calc-form select { width: 100%; padding: .8rem; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--bg); color: var(--text); font-family: var(--font-primary); font-size: 1rem; }
+        .calc-form label { display: block; font-size: 0.9rem; font-weight: 500; margin-bottom: 0.4rem; }
+        .calc-grid { grid-template-columns: 1fr; }
+        #renov-estimasi .card ul li { margin-bottom: 0.8rem; }
+
+        /* [ROMBAK] CSS Arsitek Baru */
+        .feature-grid-modern {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+        .feature-item-modern {
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            gap: 2rem;
+        }
+        .feature-item-modern__image {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            aspect-ratio: 16/10;
+        }
+        .feature-item-modern__image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .feature-item-modern:hover .feature-item-modern__image img {
+            transform: scale(1.05);
+        }
+        .feature-item-modern__content h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+        }
+        .feature-item-modern__content p {
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+        }
+        .feature-item-modern__content ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .feature-item-modern__content li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .feature-item-modern__content li i {
+            color: var(--primary);
+        }
+
+        #ars-portfolio-modern .grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        .portfolio-item-modern {
+            display: flex;
+            flex-direction: column;
+            background: var(--card);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .portfolio-item-modern:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+        .portfolio-item-modern__image {
+            height: 250px;
+            overflow: hidden;
+        }
+        .portfolio-item-modern__image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .portfolio-item-modern:hover .portfolio-item-modern__image img {
+            transform: scale(1.05);
+        }
+        .portfolio-item-modern__content {
+            padding: 1.5rem;
+            display: flex; /* [DIRAPIKAN] Flexbox untuk konten */
+            flex-direction: column;
+            flex-grow: 1; /* Memastikan konten mengisi sisa card */
+        }
+        .portfolio-item-modern__content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        .portfolio-item-modern__content p {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            flex-grow: 1; /* Mendorong tags ke bawah */
+        }
+        .portfolio-item-modern__content .project-card__tags {
+            margin-top: auto; /* Mendorong tags ke bawah */
+        }
+        /* Akhir Style Arsitek Modern */
+
+
+        @media (min-width: 1024px) {
+            #dev-process .process-step:not(:last-child)::after,
+            #ars-proses .process-step:not(:last-child)::after {
+                content: ''; position: absolute; top: 25px; left: 50%; width: 100%; height: 2px; background: repeating-linear-gradient(90deg, var(--border), var(--border) 4px, transparent 4px, transparent 10px); transform: translateX(50%); z-index: -1; 
+            }
+        }
+        @media (min-width: 900px) { 
+            .pricing-grid { grid-template-columns: repeat(3, 1fr); } 
+        }
+        @media (min-width: 768px) {
+            .container { --container-padding-mobile: 4%; }
+            .hero-grid { grid-template-columns: 1.1fr 0.9fr; gap: 3rem; text-align: left; }
+            .hero-grid p { margin-left: 0; }
+            .hero-actions { justify-content: flex-start; }
+            .contact-grid-modern { grid-template-columns: 1fr 1.2fr; }
+            
+            #dev-projects .grid,
+            #ars-portfolio-modern .grid { /* Menggunakan style grid yg sama */
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+            }
+            #renov-layanan .grid {
+                 grid-template-columns: repeat(3, 1fr); 
+            }
+            #dev-process .grid,
+            #ars-proses .grid {
+                 grid-template-columns: repeat(4, 1fr); align-items: start; 
+            }
+            #renov-estimasi .grid { grid-template-columns: repeat(2, 1fr); }
+            .map-wrapper { min-height: 450px; }
+
+            /* [ROMBAK] CSS Arsitek */
+            .feature-item-modern {
+                grid-template-columns: 1fr 1fr;
+            }
+            .feature-grid-modern {
+                gap: 4rem; /* Jarak lebih besar antar fitur */
+            }
+            /* [DIRAPIKAN] Tata letak zig-zag untuk layanan */
+            .feature-grid-modern .feature-item-modern:nth-child(even) .feature-item-modern__image {
+                order: 2;
+            }
+            .feature-grid-modern .feature-item-modern:nth-child(even) .feature-item-modern__content {
+                order: 1;
+            }
+        }
+        @media (min-width: 600px) { .calc-grid { grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 767px) {
+            .hero-grid { text-align: center; }
+            .hero-grid p { margin-inline: auto; }
+            .hero-actions { justify-content: center; }
+            .hero-grid > div:last-child { order: -1; }
+            .contact-grid-modern > div:last-child { order: -1; margin-bottom: 2rem; }
+            
+            #dev-process .grid,
+            #ars-proses .grid { grid-template-columns: repeat(2, 1fr); }
+            
+            #ars-portfolio-modern .grid {
+                grid-template-columns: 1fr; /* 1 kolom di tablet */
+            }
+
+            .wa-float { padding: .7rem 1rem; font-size: .9rem; }
+            .wa-float i { font-size: 1.3rem; }
+        }
+        @media (max-width: 480px) { 
+            #dev-process .grid,
+            #ars-proses .grid { grid-template-columns: 1fr; } 
+            .wa-float span { display: none; }
+            .wa-float { width: 56px; height: 56px; padding: 0; border-radius: 50%; justify-content: center; }
+            .wa-float i { margin: 0; font-size: 1.6rem; }
+        }
+
+        footer.main-footer { padding: 4rem 0 2rem; background-color: color-mix(in srgb, var(--text) 2.5%, transparent); border-top: 1px solid var(--border); }
+        .footer-grid { display: grid; gap: 2.5rem; grid-template-columns: 1fr; }
+        .footer-col h4 { font-size: 1.1rem; margin-bottom: 1.5rem; color: var(--text); }
+        .footer-col p { color: var(--muted); }
+        .footer-socials { display: flex; gap: 1rem; margin-top: 1.5rem; }
+        .footer-socials a { font-size: 1.1rem; color: var(--text); background-color: color-mix(in srgb, var(--text) 5%, transparent); width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; transition: all 0.3s ease; }
+        .footer-socials a:hover { background-color: var(--primary); color: #fff; transform: translateY(-3px); }
+
+        footer.main-footer .footer-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            padding-left: 20px;
+        }
+        footer.main-footer .footer-col li {
+            margin-bottom: 0.75rem;
+        }
+        footer.main-footer .footer-col a {
+            color: var(--muted);
+        }
+        footer.main-footer .footer-col a:hover {
+            color: var(--primary);
+        }
+
+        .copyright { text-align: center; color: var(--muted); font-size: .9rem; padding-top: 2rem; border-top: 1px solid var(--border); margin-top: 2rem; }
+        .wa-float { position: fixed; bottom: 20px; right: 20px; z-index: 100; background: linear-gradient(135deg, #25d366, #128c7e); color: #FFF; border-radius: 999px; box-shadow: 2px 2px 15px rgba(0,0,0,0.2); display: flex; align-items: center; gap: .7rem; padding: .8rem 1.2rem; font-weight: 600; transition: transform .2s ease, box-shadow .2s ease; }
+        .wa-float:hover { transform: scale(1.05) translateY(-2px); box-shadow: 4px 4px 20px rgba(0,0,0,0.25); color: #FFF; }
+        .wa-float i { font-size: 1.5rem; }
+
+        @media (min-width: 600px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (min-width: 1024px) { .footer-grid { grid-template-columns: 2fr 1fr 1fr 1.5fr; } }
+    </style>
+</head>
+<body class="view-developer">
+    
+    <header role="banner" id="pageHeader">
+        <div class="container nav-container">
+            <a href="#pageHeader" class="brand" aria-label="Beranda PT Wijaya Abi Perkasa">
+                <img src="https://iili.io/2rFsEV1.png" alt="Logo PT Wijaya Abi Perkasa" width="50" height="50"/>
+                <span>Wijaya Abi Perkasa</span>
+            </a>
+            <div class="main-nav-right">
+                <div class="view-switcher">
+                    <button class="switch-btn active" id="switchToDeveloper" aria-label="Lihat sebagai Developer">Developer</button>
+                    <button class="switch-btn" id="switchToRenovasi" aria-label="Lihat sebagai Renovasi">Renovasi</button>
+                    <button class="switch-btn" id="switchToArsitek" aria-label="Lihat sebagai Arsitek">Arsitek</button>
+                </div>
+                <nav class="desktop-nav" aria-label="Navigasi Utama">
+                    <ul class="nav-item--developer">
+                        <li><a href="#dev-hero">Beranda</a></li>
+                        <li><a href="#dev-projects">Proyek</a></li>
+                        <li><a href="#dev-process">Alur</a></li>
+                        <li><a href="#dev-faq">FAQ</a></li>
+                        <li><a href="#dev-contact">Kontak</a></li>
+                    </ul>
+                    <ul class="nav-item--renovasi">
+                        <li><a href="#renov-hero">Beranda</a></li>
+                        <li><a href="#renov-layanan">Layanan</a></li>
+                        <li><a href="#renov-harga">Paket</a></li>
+                        <li><a href="#renov-galeri">Galeri</a></li>
+                        <li><a href="#renov-contact">Kontak</a></li>
+                    </ul>
+                    <ul class="nav-item--arsitek">
+                        <li><a href="#ars-hero">Beranda</a></li>
+                        <li><a href="#ars-harga">Paket</a></li>
+                        <li><a href="#ars-portfolio-modern">Portfolio</a></li>
+                        <li><a href="#ars-layanan">Layanan</a></li>
+                        <li><a href="#ars-proses">Alur</a></li>
+                        <li><a href="#ars-contact">Kontak</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav" aria-label="Buka Menu">
+                    <span class="menu-btn-burger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="nav-overlay" id="navOverlay"></div>
+    <nav id="mobileNav" class="mobile-nav" aria-label="Navigasi Mobile">
+        <a href="#pageHeader" class="brand">
+            <img src="https://iili.io/2rFsEV1.png" alt="Logo PT Wijaya Abi Perkasa" width="50" height="50"/>
+            <span>Wijaya Abi Perkasa</span>
+        </a>
+        <div class="view-switcher">
+            <button class="switch-btn active" id="switchToDeveloperMobile" aria-label="Lihat sebagai Developer">Developer</button>
+            <button class="switch-btn" id="switchToRenovasiMobile" aria-label="Lihat sebagai Renovasi">Renovasi</button>
+            <button class="switch-btn" id="switchToArsitekMobile" aria-label="Lihat sebagai Arsitek">Arsitek</button>
+        </div>
+        <div class="mobile-nav-main">
+            <ul class="nav-item--developer">
+                <li><a href="#dev-hero"><i class="fas fa-home"></i>Beranda</a></li>
+                <li><a href="#dev-projects"><i class="fas fa-building"></i>Proyek</a></li>
+                <li><a href="#dev-process"><i class="fas fa-shoe-prints"></i>Alur Pembelian</a></li>
+                <li><a href="#dev-faq"><i class="fas fa-question-circle"></i>FAQ</a></li>
+                <li><a href="#dev-contact"><i class="fas fa-envelope"></i>Kontak</a></li>
+            </ul>
+            <ul class="nav-item--renovasi">
+                <li><a href="#renov-hero"><i class="fas fa-home"></i>Beranda</a></li>
+                <li><a href="#renov-layanan"><i class="fas fa-wrench"></i>Layanan</a></li>
+                <li><a href="#renov-harga"><i class="fas fa-tags"></i>Paket</a></li>
+                <li><a href="#renov-estimasi"><i class="fas fa-calculator"></i>Estimasi RAB</a></li>
+                <li><a href="#renov-galeri"><i class="fas fa-images"></i>Galeri</a></li>
+                <li><a href="#renov-contact"><i class="fas fa-envelope"></i>Kontak</a></li>
+            </ul>
+            <ul class="nav-item--arsitek">
+                <li><a href="#ars-hero"><i class="fas fa-home"></i>Beranda</a></li>
+                <li><a href="#ars-harga"><i class="fas fa-tags"></i>Paket Harga</a></li>
+                <li><a href="#ars-portfolio-modern"><i class="fas fa-palette"></i>Portfolio</a></li>
+                <li><a href="#ars-layanan"><i class="fas fa-pencil-ruler"></i>Layanan</a></li>
+                <li><a href="#ars-proses"><i class="fas fa-sitemap"></i>Alur Desain</a></li>
+                <li><a href="#ars-contact"><i class="fas fa-envelope"></i>Kontak</a></li>
+            </ul>
+        </div>
+        <div class="mobile-nav-footer">
+            <a href="#" id="mobileWhatsappBtn" class="btn primary" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Konsultasi Gratis</a>
+            <div class="mobile-nav-socials">
+                <a href="https://www.facebook.com/profile.php?id=100072680253326" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/wijayaabi.property/?hl=id" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@wijayaabiproperty" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </nav>
+    <main role="main">
+        
+        <div id="developerContent" class="content-wrapper active">
+            <section id="dev-hero" class="section container" role="region" aria-labelledby="dev-hero-heading">
+                <div class="hero-grid">
+                    <div data-reveal>
+                        <h1 id="dev-hero-heading"><span class="gradient-text">Membangun Hunian,</span> Mewujudkan Impian Anda</h1>
+                        <p class="hero-subheading">Temukan rumah idaman di lokasi strategis Sragen dengan kualitas konstruksi terbaik dan harga kompetitif bersama kami.</p>
+                        <div class="hero-actions">
+                            <a href="#dev-contact" class="btn primary"><i class="fas fa-envelope"></i> Hubungi Kami</a>
+                            <a href="#dev-projects" class="btn secondary">Lihat Proyek</a>
+                        </div>
+                    </div>
+                    <div data-reveal class="hero-image-wrapper">
+                        <img src="https://i.imghippo.com/files/GYV9857h.jpg" alt="Kantor PT Wijaya Abi Perkasa" width="800" height="500" />
+                    </div>
+                </div>
+            </section>
+            
+            <section id="dev-projects" class="section bg-muted" role="region" aria-labelledby="dev-projects-heading">
+                <div class="container">
+                    <div class="section-header" data-reveal><h2 id="dev-projects-heading">Proyek Unggulan Kami</h2></div>
+                    <div class="grid" data-reveal>
+                        <article class="card project-card">
+                            <div class="project-card__image"><img src="https://i.imghippo.com/files/tPo7947xPM.png" alt="Fasad modern perumahan Abi Tanjung Residence" loading="lazy" width="500" height="300"><div class="project-card__status">Siap Huni</div></div>
+                            <div class="project-card__body"><h3>Abi Tanjung Residence</h3><p class="project-card__description">Hunian modern berkonsep minimalis yang ideal untuk keluarga muda, berlokasi di area strategis.</p><a href="https://drive.google.com/file/d/1irerCOiSBYI8F_bwckfR0y45eT2v_Fuy/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn secondary">Lihat Brosur</a></div>
+                        </article>
+                        <article class="card project-card">
+                            <div class="project-card__image"><img src="https://i.imghippo.com/files/Hmo2378qGE.png" alt="Tampak depan perumahan Rosiana Abi Residence" loading="lazy" width="500" height="300"><div class="project-card__status">Siap Huni</div></div>
+                            <div class="project-card__body"><h3>Rosiana Abi Residence</h3><p class="project-card__description">Perumahan elegan di jantung kota yang menawarkan kemudahan akses dan lingkungan asri.</p><a href="https://drive.google.com/file/d/1JbQlCIPHWssZM3-E9ZlwpnHYJ9DRce12/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn secondary">Lihat Brosur</a></div>
+                        </article>
+                        <article class="card project-card">
+                            <div class="project-card__image"><img src="https://i.imghippo.com/files/YjEt6658MtI.png" alt="Tampak depan perumahan Maston Abi Residence" loading="lazy" width="500" height="300"><div class="project-card__status">Siap Huni</div></div>
+                            <div class="project-card__body"><h3>Maston Abi Residence</h3><p class="project-card__description">Perumahan subsidi di pusat perkotaan yang menawarkan kemudahan akses dan desain yang modern sekali.</p><a href="httpsD://drive.google.com/file/d/1gtJS_nK5GvRStK9_FE77N5JGxpe80noP/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn secondary">Lihat Brosur</a></div>
+                        </article>
+                        <article class="card project-card">
+                            <div class="project-card__image"><img src="https://i.imghippo.com/files/qnjI8458hNY.png" alt="Tampak depan perumahan WAP CITY HOUSE" loading="lazy" width="500" height="300"><div class="project-card__status">Siap Huni</div></div>
+                            <div class="project-card__body"><h3>WAP CITY HOUSE</h3><p class="project-card__description">Perumahan komersil di pusat perkotaan dengan desain modern dan harga terbaik.</p><a href="https://drive.google.com/file/d/1jcUVjyjv-2-UxYEsIIO_CgtZzgR_McCq/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn secondary">Lihat Brosur</a></div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dev-process" class="section container" role="region" aria-labelledby="dev-process-heading">
+                <div class="section-header" data-reveal><h2 id="dev-process-heading">Alur Pembelian Mudah & Aman</h2><p>Kami menyederhanakan setiap langkah agar Anda dapat memiliki rumah impian dengan nyaman dan transparan.</p></div>
+                <div class="grid" data-reveal>
+                    <div class="process-step"><div class="process-step__number">1</div><h3>Konsultasi & Survei</h3><p>Pilih unit yang Anda inginkan dan konsultasikan dengan tim marketing kami.</p></div>
+                    <div class="process-step"><div class="process-step__number">2</div><h3>Booking Fee</h3><p>Amankan unit pilihan Anda dengan melakukan pembayaran booking fee.</p></div>
+                    <div class="process-step"><div class="process-step__number">3</div><h3>Proses KPR/Cash</h3><p>Kami bantu proses administrasi pengajuan KPR atau pembayaran bertahap.</p></div>
+                    <div class="process-step"><div class="process-step__number">4</div><h3>Akad & Serah Terima</h3><p>Setelah akad disetujui, kami akan melakukan serah terima kunci rumah Anda.</p></div>
+                </div>
+            </section>
+
+            <section id="dev-faq" class="section bg-muted" role="region" aria-labelledby="dev-faq-heading">
+                <div class="container" style="max-width: 800px;">
+                    <div class="section-header" data-reveal><h2 id="dev-faq-heading">Pertanyaan Umum (FAQ)</h2></div>
+                    <div class="grid" style="gap: 1rem;" data-reveal>
+                        <details class="faq-item"><summary>Bagaimana cara mengajukan KPR?</summary><div class="faq-answer"><p>Tim kami akan membantu Anda mulai dari simulasi angsuran hingga proses pengajuan ke bank rekanan kami. Anda hanya perlu menyiapkan dokumen dasar seperti KTP, slip gaji/bukti penghasilan, dan NPWP.</p></div></details>
+                        <details class="faq-item"><summary>Apakah bisa melakukan survei lokasi di akhir pekan?</summary><div class="faq-answer"><p>Tentu saja bisa. Tim marketing kami siap melayani dan menjadwalkan kunjungan survei pada hari Sabtu atau Minggu. Silakan hubungi kami melalui WhatsApp untuk membuat janji temu.</p></div></details>
+                        <details class="faq-item"><summary>Harga properti sudah termasuk apa saja?</summary><div class="faq-answer"><p>Harga yang kami tawarkan sudah termasuk biaya IMB/PBG, sertifikat hak milik (SHM), serta pemasangan instalasi listrik & air bersih standar. Rincian lengkap untuk setiap proyek tersedia di dalam brosur.</p></div></details>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dev-contact" class="section container" role="region" aria-labelledby="dev-contact-heading">
+                <div class="section-header" data-reveal><h2 id="dev-contact-heading">Tertarik dengan Proyek Kami?</h2><p>Jadwalkan kunjungan atau ajukan pertanyaan. Tim kami siap membantu Anda.</p></div>
+                <div class="contact-grid-modern" data-reveal>
+                    <div class="contact-info">
+                        <div class="contact-info-item"><div class="contact-icon-wrapper"><i class="fas fa-map-marker-alt"></i></div><div><strong>Alamat Kantor</strong><p>Taman Agung RT 04 RW 02 Nglorog, Sragen, Jawa Tengah</p></div></div>
+                        <div class="contact-info-item"><div class="contact-icon-wrapper"><i class="fas fa-envelope"></i></div><div><strong>Email</strong><p><a href="mailto:ptwijayaabiperkasa@gmail.com">ptwijayaabiperkasa@gmail.com</a></p></div></div>
+                        <div class="contact-info-item"><div class="contact-icon-wrapper"><i class="fas fa-phone"></i></div><div><strong>Telepon / WhatsApp</strong><p><a href="https://wa.me/6281329455592?text=Halo%20PT%20Wijaya%20Abi%20Perkasa,%20saya%20tertarik%20dengan%20proyek%20developer%20Anda." target="_blank" rel="noopener noreferrer">+62 813-2945-5592</a></p></div></div>
+                    </div>
+                    <div class="map-wrapper"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.4339324372477!2d111.03895217318781!3d-7.417133073048724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a036c7f2fe0e1%3A0x52dbaed1037e0318!2sPT%20Wijaya%20Abi%20Perkasa!5e0!3m2!1sid!2sid!4v1762140655042!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokasi Kantor"></iframe></div>
+                </div>
+            </section>
+        </div>
+
+        <div id="renovasiContent" class="content-wrapper">
+            <section id="renov-hero" class="section container" role="region" aria-labelledby="renov-hero-heading">
+                <div class="hero-grid">
+                    <div data-reveal>
+                        <h1 id="renov-hero-heading"><span class="gradient-text">Renovasi Modern</span> & Profesional Untuk Hunian Impian</h1>
+                        <p class="hero-subheading">Partner terpercaya untuk renovasi, desain interior, dan RAB yang akurat di Sragen & Solo Raya.</p>
+                        <div class="hero-actions">
+                            <a href="#renov-contact" class="btn primary"><i class="fas fa-envelope"></i> Hubungi Kami</a>
+                            <a href="#renov-harga" class="btn secondary">Lihat Paket</a>
+                        </div>
+                    </div>
+                    <div data-reveal class="hero-image-wrapper"><img src="https://i.imghippo.com/files/GYV9857h.jpg" alt="Rumah hasil renovasi" width="800" height="500" /></div>
+                </div>
+            </section>
+
+            <section id="renov-layanan" class="section bg-muted" role="region" aria-labelledby="renov-layanan-heading">
+                <div class="container">
+                    <div class="section-header" data-reveal><h2 id="renov-layanan-heading">Layanan Profesional Kami</h2><p>Dari konsep hingga serah terima kunci, kami menangani setiap detail dengan presisi tinggi.</p></div>
+                    <div class="grid" data-reveal>
+                        <div class="card service-card"><div class="icon-wrapper"><i class="fas fa-home-alt"></i></div><h3>Renovasi Menyeluruh</h3><p class="muted">Peremajaan fasad, perluasan bangunan, dan perbaikan struktur.</p></div>
+                        <div class="card service-card"><div class="icon-wrapper"><i class="fas fa-drafting-compass"></i></div><h3>Desain Interior</h3><p class="muted">Menciptakan ruang yang estetis, fungsional, dan nyaman.</p></div>
+                        <div class="card service-card"><div class="icon-wrapper"><i class="fas fa-file-invoice-dollar"></i></div><h3>RAB Transparan</h3><p class="muted">Perencanaan anggaran biaya yang detail dan transparan.</p></div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="renov-harga" class="section" role="region" aria-labelledby="renov-harga-heading">
+                <div class="container">
+                    <div class="section-header" data-reveal><h2 id="renov-harga-heading">Paket Renovasi & Desain</h2><p>Pilih paket yang paling sesuai dengan kebutuhan dan anggaran Anda. Fleksibel dan transparan.</p></div>
+                    <div class="grid pricing-grid" data-reveal>
+                        <article class="card price-card">
+                            <div class="price-card-header"><div class="package-name">PAKET SILVER</div><div class="price">Rp 25 Jt+</div><p class="muted">Ideal untuk renovasi 1-2 ruangan.</p></div>
+                            <div class="price-card-body">
+                                <ul class="price-card-features">
+                                    <li><i class="fas fa-check"></i> Konsultasi Desain</li><li><i class="fas fa-check"></i> Gambar Kerja 2D</li><li><i class="fas fa-check"></i> Pengerjaan Sipil Standar</li>
+                                    <li><i class="fas fa-check"></i> Finishing Cat & Perapian</li><li><i class="fas fa-check"></i> Garansi Pengerjaan 3 Bulan</li>
+                                </ul><a href="#renov-contact" class="btn secondary">Pilih Paket</a>
+                            </div>
+                        </article>
+                        <article class="card price-card popular">
+                            <div class="popular-badge">Populer</div>
+                            <div class="price-card-header"><div class="package-name">PAKET GOLD</div><div class="price">Rp 75 Jt+</div><p class="muted">Untuk renovasi skala menengah & custom.</p></div>
+                            <div class="price-card-body">
+                                <ul class="price-card-features">
+                                    <li><i class="fas fa-check"></i> Semua di Paket Silver</li><li><i class="fas fa-check"></i> <strong>Desain Visualisasi 3D</strong></li><li><i class="fas fa-check"></i> Material Kualitas Premium</li>
+                                    <li><i class="fas fa-check"></i> Pengerjaan Furniture Custom</li><li><i class="fas fa-check"></i> Garansi Pengerjaan 6 Bulan</li>
+                                </ul><a href="#renov-contact" class="btn primary">Pilih Paket</a>
+                            </div>
+                        </article>
+                        <article class="card price-card">
+                            <div class="price-card-header"><div class="package-name">PAKET PLATINUM</div><div class="price">Rp 150 Jt+</div><p class="muted">Solusi lengkap bangun dari nol.</p></div>
+                            <div class="price-card-body">
+                                <ul class="price-card-features">
+                                    <li><i class="fas fa-check"></i> Semua di Paket Gold</li><li><i class="fas fa-check"></i> <strong>Manajemen Proyek Penuh</strong></li><li><i class="fas fa-check"></i> Pengurusan IMB (opsional)</li>
+                                    <li><i class="fas fa-check"></i> Instalasi Smart Home</li><li><i class="fas fa-check"></i> Garansi Pengerjaan 12 Bulan</li>
+                                </ul><a href="#renov-contact" class="btn secondary">Pilih Paket</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="renov-estimasi" class="section bg-muted" role="region" aria-labelledby="renov-estimasi-heading">
+                <div class="container">
+                    <div class="section-header" data-reveal><h2 id="renov-estimasi-heading">Estimator RAB Cepat</h2><p>Dapatkan perkiraan awal biaya renovasi Anda secara instan. Hasil ini hanya estimasi, bukan penawaran final.</p></div>
+                    <div class="grid" data-reveal>
+                        <form id="calcForm" class="card calc-form" novalidate>
+                            <div class="grid calc-grid" style="gap: 1rem;">
+                                <div style="grid-column: 1 / -1;">
+                                    <label for="luas">Luas Area (m²)</label>
+                                    <input id="luas" type="number" name="luas" min="5" placeholder="Contoh: 60" required aria-label="Luas Area dalam meter persegi">
+                                </div>
+                                <div>
+                                    <label for="tingkat">Tingkat Pekerjaan</label>
+                                    <select id="tingkat" name="tingkat" required aria-label="Tingkat Pekerjaan Renovasi"><option value="ringan">Ringan</option><option value="sedang" selected>Sedang</option><option value="berat">Berat</option></select>
+                                </div>
+                                <div>
+                                    <label for="kualitas">Kualitas Material</label>
+                                    <select id="kualitas" name="kualitas" required aria-label="Kualitas Material"><option value="standar" selected>Standar</option><option value="premium">Premium</option></select>
+                                </div>
+                            </div>
+                            <div style="margin-top: 1.5rem;">
+                                <p class="muted" style="margin: 0; font-size: 0.9rem;">Estimasi Biaya:</p>
+                                <div id="calcResult" style="font-size: 2rem; font-weight: 800; color: var(--primary);" aria-live="polite">Rp 0</div>
+                            </div>
+                        </form>
+                        <div class="card">
+                            <h3><i class="fas fa-lightbulb"></i> Tips Hemat Renovasi</h3>
+                            <ul style="padding-left: 1.2rem; color: var(--muted);">
+                                <li>Prioritaskan ruang dengan dampak terbesar seperti dapur atau kamar mandi.</li>
+                                <li>Pilih material awet dengan garansi jangka panjang untuk investasi terbaik.</li>
+                                <li>Jadwalkan survei lokasi untuk mendapatkan RAB yang akurat dan detail dari kami.</li>
+                            </ul>
+                            <a href="#" id="renovasiSurveyBtn" class="btn primary" style="width: 100%; margin-top: auto;" aria-label="Jadwalkan Survei Gratis">Jadwalkan Survei Gratis</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="renov-galeri" class="section container" role="region" aria-labelledby="renov-galeri-heading">
+                <div class="section-header" data-reveal><h2 id="renov-galeri-heading">Galeri Proyek Renovasi</h2></div>
+                <div class="gallery-container" data-reveal>
+                    <div class="gallery-slider-wrapper">
+                        <div class="gallery-track" id="galleryTrack">
+                            <div class="gallery-slide"><img src="https://picsum.photos/seed/livingroom/800/500" alt="Interior ruang tamu" loading="lazy"/></div>
+                            <div class="gallery-slide"><img src="https://picsum.photos/seed/kitchen/800/500" alt="Dapur minimalis" loading="lazy"/></div>
+                            <div class="gallery-slide"><img src="https://picsum.photos/seed/bathroom/800/500" alt="Kamar mandi elegan" loading="lazy"/></div>
+                            <div class="gallery-slide"><img src="https://picsum.photos/seed/facade/800/500" alt="Fasad rumah modern" loading="lazy"/></div>
+                        </div>
+                        <button class="slider-btn prev" id="prevBtn" aria-label="Sebelumnya"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn next" id="nextBtn" aria-label="Berikutnya"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="gallery-dots" id="galleryDots"></div>
+                </div>
+            </section>
+
+            <section id="renov-contact" class="section bg-muted" role="region" aria-labelledby="renov-contact-heading">
+                <div class="container">
+                    <div class="section-header" data-reveal><h2 id="renov-contact-heading">Siap Memulai Proyek Renovasi?</h2><p>Hubungi kami untuk konsultasi gratis dan wujudkan rumah impian Anda.</p></div>
+                    <div class="contact-grid-modern" data-reveal>
+                        <div class="contact-info">
+                            <div class="contact-info-item"><div class="contact-icon-wrapper"><i class="fas fa-map-marker-alt"></i></div><div><strong>Alamat Kantor</strong><p>Taman Agung RT 04 RW 02 Nglorog, Sragen, Jawa Tengah</p></div></div>
+                            <div class="contact-info-item"><div class="contact-icon-wrapper"><i class="fas fa-envelope"></i></div><div><strong>Email</strong><p><a href="mailto:ptwijayaabiperkasa@gmail.com">ptwijayaabiperkasa@gmail.com</a></p></div></div>
+                            <div class="contact-info-item"><div class="contact-icon-wrapper"><i class="fas fa-phone"></i></div><div><strong>Telepon / WhatsApp</strong><p><a href="https://wa.me/6281329455592?text=Halo%20PT%20Wijaya%20Abi%20Perkasa,%20saya%20tertarik%20dengan%20layanan%20renovasi%20Anda." target="_blank" rel="noopener noreferrer">+62 813-2945-5592</a></p></div></div>
+                        </div>
+                        <div class="map-wrapper"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.4339324372477!2d111.03895217318781!3d-7.417133073048724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a036c7f2fe0e1%3A0x52dbaed1037e0318!2sPT%20Wijaya%20Abi%20Perkasa!5e0!3m2!1sid!2sid!4v1762140655042!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokasi Kantor"></iframe></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="arsitekContent" class="content-wrapper">
+            <section id="ars-hero" class="section container" role="region" aria-labelledby="ars-hero-heading">
+                <div class="hero-grid">
+                    <div data-reveal>
+                        <h1 id="ars-hero-heading">Arsitektur Adalah <span class="gradient-text">Cerita Anda.</span></h1>
+                        <p class="hero-subheading">Kami menerjemahkan visi Anda menjadi ruang yang fungsional dan berkarakter. Mulai dari denah, interior, hingga fasad yang memukau.</p>
+                        <div class="hero-actions">
+                            <a href="#ars-contact" class="btn primary"><i class="fas fa-envelope"></i> Mulai Konsultasi</a>
+                            <a href="#ars-harga" class="btn secondary">Lihat Paket Harga</a>
+                        </div>
+                    </div>
+                    <div data-reveal class="hero-image-wrapper">
+                        <img src="https://i.imghippo.com/files/GYV9857h.jpg" alt="Desain arsitektur modern" width="800" height="500" />
+                    </div>
+                </div>
+            </section>
+
+            <section id="ars-harga" class="section bg-muted" role="region" aria-labelledby="ars-harga-heading">
+                <div class="container">
+                    <div class="section-header" data-reveal>
+                        <h2 id="ars-harga-heading">Paket Harga Desain Profesional</h2>
+                        <p>Harga transparan untuk mewujudkan visi Anda. (Harga final disesuaikan dengan kompleksitas)</p>
+                    </div>
+                    <div class="grid pricing-grid" data-reveal>
+                        <article class="card price-card">
+                            <div class="price-card-header">
+                                <div class="package-name">KONSEP DENAH</div>
+                                <div class="price">Rp 5 Jt+</div>
+                                <p class="price-note">Ideal untuk < 100 m²</p>
+                            </div>
+                            <div class="price-card-body">
+                                <ul class="price-card-features">
+                                    <li><i class="fas fa-check"></i> Konsultasi & Survei</li>
+                                    <li><i class="fas fa-check"></i> <strong>Desain Denah 2D</strong></li>
+                                    <li><i class="fas fa-check"></i> <strong>Studi Fasad 3D (Basic)</strong></li>
+                                    <li><i class="fas fa-times"></i> Visualisasi 3D Render</li>
+                                    <li><i class="fas fa-times"></i> Gambar Kerja (DED)</li>
+                                    <li><i class="fas fa-times"></i> Estimasi RAB</li>
+                                </ul><a href="#ars-contact" class="btn secondary">Pilih Paket</a>
+                            </div>
+                        </article>
+                        <article class="card price-card popular">
+                            <div class="popular-badge">Populer</div>
+                            <div class="price-card-header">
+                                <div class="package-name">DESAIN VISUAL 3D</div>
+                                <div class="price">Rp 12 Jt+</div>
+                                <p class="price-note">Ideal untuk < 150 m²</p>
+                            </div>
+                            <div class="price-card-body">
+                                <ul class="price-card-features">
+                                    <li><i class="fas fa-check"></i> Semua di Paket Konsep</li>
+                                    <li><i class="fas fa-check"></i> <strong>Desain Fasad 3D (Detail)</strong></li>
+                                    <li><i class="fas fa-check"></i> <strong>Desain Interior 3D</strong></li>
+                                    <li><i class="fas fa-check"></i> <strong>Visualisasi 3D Render</strong></li>
+                                    <li><i class="fas fa-check"></i> Revisi Desain 2x</li>
+                                    <li><i class="fas fa-times"></i> Gambar Kerja (DED)</li>
+                                </ul><a href="#ars-contact" class="btn primary">Pilih Paket</a>
+                            </div>
+                        </article>
+                        <article class="card price-card">
+                            <div class="price-card-header">
+                                <div class="package-name">LENGKAP (DED + RAB)</div>
+                                <div class="price">Rp 20 Jt+</div>
+                                <p class="price-note">Ideal untuk > 150 m²</p>
+                            </div>
+                            <div class="price-card-body">
+                                <ul class="price-card-features">
+                                    <li><i class="fas fa-check"></i> Semua di Paket Visual 3D</li>
+                                    <li><i class="fas fa-check"></i> <strong>Gambar Kerja (DED)</strong></li>
+                                    <li><i class="fas fa-check"></i> <strong>Estimasi Rencana Anggaran Biaya (RAB)</strong></li>
+                                    <li><i class="fas fa-check"></i> Revisi Desain 3x</li>
+                                    <li><i class="fas fa-check"></i> Pengawasan Berkala (Opsional)</li>
+                                </ul><a href="#ars-contact" class="btn secondary">Pilih Paket</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ars-portfolio-modern" class="section" role="region" aria-labelledby="ars-portfolio-heading">
+                <div class="container">
+                    <div class="section-header" data-reveal><h2 id="ars-portfolio-heading">Portfolio Desain Pilihan</h2><p>Karya kami memadukan estetika modern dan fungsi yang presisi.</p></div>
+                    <div class="grid" data-reveal>
+                        <article class="portfolio-item-modern">
+                            <div class="portfolio-item-modern__image"><img src="https://picsum.photos/seed/modern-villa/500/300" alt="Desain rumah villa modern" loading="lazy" width="500" height="300"></div>
+                            <div class="portfolio-item-modern__content">
+                                <h3>Modern Villa Tropis, Sragen</h3>
+                                <p>Memaksimalkan bukaan cahaya dan sirkulasi udara untuk hunian yang sejuk dan menyatu dengan alam.</p>
+                                <div class="project-card__tags">
+                                    <span class="project-card__tag">Residensial</span>
+                                    <span class="project-card__tag">Fasad</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="portfolio-item-modern">
+                            <div class="portfolio-item-modern__image"><img src="https://picsum.photos/seed/minimalist-interior/500/300" alt="Desain interior minimalis" loading="lazy" width="500" height="300"></div>
+                            <div class="portfolio-item-modern__content">
+                                <h3>Interior Kantor Startup, Solo</h3>
+                                <p>Desain ruang kerja yang bersih, fungsional, dan kolaboratif untuk meningkatkan produktivitas.</p>
+                                <div class="project-card__tags">
+                                    <span class="project-card__tag">Interior</span>
+                                    <span class="project-card__tag">Komersial</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="ars-layanan" class="section bg-muted" role="region" aria-labelledby="ars-layanan-heading">
+                <div class="container" data-reveal>
+                    <div class="section-header" style="text-align: center; max-width: 700px; margin-inline: auto;">
+                        <h2 id="ars-layanan-heading">Layanan Kami: Dari Ide ke Realita</h2>
+                        <p>Kami adalah partner kolaboratif Anda, mengubah ide abstrak menjadi kenyataan yang fungsional dan indah.</p>
+                    </div>
+                    <div class="feature-grid-modern">
+                        <div class="feature-item-modern">
+                            <div class="feature-item-modern__image" data-reveal>
+                                <img src="https://picsum.photos/seed/arch-plan/800/600" alt="Denah arsitektur" loading="lazy">
+                            </div>
+                            <div class="feature-item-modern__content" data-reveal>
+                                <h3>Perencanaan Denah & Konsep</h3>
+                                <p>Setiap desain hebat dimulai dengan denah yang cerdas. Kami berfokus pada alur sirkulasi, pencahayaan alami, dan efisiensi ruang untuk menciptakan fondasi yang kokoh bagi proyek Anda.</p>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Analisis Kebutuhan Ruang</li>
+                                    <li><i class="fas fa-check"></i> Desain Denah 2D (Floor Plan)</li>
+                                    <li><i class="fas fa-check"></i> Studi Massa Bangunan 3D</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-item-modern">
+                            <div class="feature-item-modern__image" data-reveal>
+                                <img src="https://picsum.photos/seed/arch-interior/800/600" alt="Interior modern" loading="lazy">
+                            </div>
+                            <div class="feature-item-modern__content" data-reveal>
+                                <h3>Desain Interior & Visualisasi</h3>
+                                <p>Kami menghidupkan denah Anda. Melalui pemilihan material, palet warna, dan tata letak furnitur, kami menciptakan suasana ruang yang personal dan sesuai dengan karakter Anda.</p>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Mood Board & Pemilihan Material</li>
+                                    <li><i class="fas fa-check"></i> Desain Interior 3D Fotorealistis</li>
+                                    <li><i class="fas fa-check"></i> Desain Furnitur Custom</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ars-proses" class="section" role="region" aria-labelledby="ars-proses-heading">
+                <div class="container">
+                    <div class="section-header" data-reveal><h2 id="ars-proses-heading">Alur Proses Desain</h2><p>Setiap proyek kami lalui dengan alur yang terstruktur untuk menjamin kualitas dan ketepatan waktu.</p></div>
+                    <div class="grid" data-reveal>
+                        <div class="process-step"><div class="process-step__number">1</div><h3>Konsultasi & Visi</h3><p>Memahami kebutuhan, visi, anggaran, dan karakteristik lokasi Anda.</p></div>
+                        <div class="process-step"><div class="process-step__number">2</div><h3>Konsep & Denah</h3><p>Membuat denah, studi fasad, dan mood board sebagai acuan desain.</p></div>
+                        <div class="process-step"><div class="process-step__number">3</div><h3>Desain 3D & Material</h3><p>Visualisasi 3D fotorealistis dan pemilihan material secara mendetail.</p></div>
+                        <div class="process-step"><div class="process-step__number">4</div><h3>Gambar Teknis (DED)</h3><p>Menyiapkan dokumen teknis lengkap untuk proses konstruksi.</p></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ars-contact" class="section bg-muted" role="region" aria-labelledby="ars-contact-heading">
+                <div class="container">
+                    <div class="section-header" data-reveal><h2 id="ars-contact-heading">Wujudkan Visi Arsitektur Anda</h2><p>Mari diskusikan ide Anda. Tim arsitek kami siap membantu.</p></div>
+                    <div class="contact-grid-modern" data-reveal>
+                        <div class="contact-info">
+                            <div class="contact-info-item"><div class="contact-icon-wrapper"><i class="fas fa-map-marker-alt"></i></div><div><strong>Alamat Kantor</strong><p>Taman Agung RT 04 RW 02 Nglorog, Sragen, Jawa Tengah</p></div></div>
+                            <div class="contact-info-item"><div class="contact-icon-wrapper"><i class="fas fa-envelope"></i></div><div><strong>Email</strong><p><a href="mailto:ptwijayaabiperkasa@gmail.com">ptwijayaabiperkasa@gmail.com</a></p></div></div>
+                            <div class="contact-info-item"><div class="contact-icon-wrapper"><i class="fas fa-phone"></i></div><div><strong>Telepon / WhatsApp</strong><p><a href="https://wa.me/6281329455592?text=Halo%20PT%20Wijaya%20Abi%20Perkasa,%20saya%20tertarik%20dengan%20jasa%20desain%20arsitek%20Anda." target="_blank" rel="noopener noreferrer">+62 813-2945-5592</a></p></div></div>
+                        </div>
+                        <div class="map-wrapper"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.4339324372477!2d111.03895217318781!3d-7.417133073048724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a036c7f2fe0e1%3A0x52dbaed1037e0318!2sPT%20Wijaya%20Abi%20Perkasa!5e0!3m2!1sid!2sid!4v1762140655042!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokasi Kantor"></iframe></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+
+    <footer class="main-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>PT Wijaya Abi Perkasa</h4>
+                    <p>Developer, Kontraktor, & Arsitek terpercaya di Sragen & Solo Raya. Kami berkomitmen pada kualitas, inovasi, dan kepuasan Anda.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/profile.php?id=100072680253326" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/wijayaabi.property/?hl=id" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@wijayaabiproperty" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Developer Properti</h4>
+                    <ul>
+                        <li><a href="#dev-projects">Proyek Kami</a></li>
+                        <li><a href="#dev-process">Alur Pembelian</a></li>
+                        <li><a href="#dev-faq">Tanya Jawab</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Jasa Kami</h4>
+                    <ul>
+                        <li><a href="#renov-layanan">Layanan Renovasi</a></li>
+                        <li><a href="#ars-harga">Harga Desain Arsitek</a></li>
+                        <li><a href="#ars-portfolio-modern">Portfolio Desain</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hubungi Kami</h4>
+                    <ul>
+                        <li><a href="https://wa.me/6281329455592" target="_blank" rel="noopener noreferrer">+62 813-2945-5592</a></li>
+                        <li><a href="mailto:ptwijayaabiperkasa@gmail.com">ptwijayaabiperkasa@gmail.com</a></li>
+                        <li>Taman Agung RT 04 RW 02 Nglorog, Sragen</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© <span id="year"></span> PT Wijaya Abi Perkasa. Semua Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="#" id="floatWhatsappBtn" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Kami">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+    </a>
+    
+    <script>
+        (() => {
+            // [PERBAIKAN KONTEN HILANG]
+            // Seluruh skrip dibungkus dalam 'DOMContentLoaded' untuk memastikan
+            // semua elemen HTML sudah ada sebelum JS dijalankan.
+            document.addEventListener('DOMContentLoaded', () => {
+                const body = document.body;
+                const qs = (selector) => document.querySelector(selector);
+                const qsa = (selector) => document.querySelectorAll(selector);
+                const whatsappNumber = '6281329455592';
+
+                // --- Definisi Elemen ---
+                const devBtns = [qs('#switchToDeveloper'), qs('#switchToDeveloperMobile')];
+                const renovBtns = [qs('#switchToRenovasi'), qs('#switchToRenovasiMobile')];
+                const arsBtns = [qs('#switchToArsitek'), qs('#switchToArsitekMobile')];
+                
+                const devContent = qs('#developerContent');
+                const renovContent = qs('#renovasiContent');
+                const arsitekContent = qs('#arsitekContent');
+                
+                const floatWhatsappBtn = qs('#floatWhatsappBtn');
+                const mobileWhatsappBtn = qs('#mobileWhatsappBtn');
+                const renovasiSurveyBtn = qs('#renovasiSurveyBtn');
+
+                // --- Fungsi-Fungsi ---
+
+                function updateWhatsappLinks(view) {
+                    const devMsg = encodeURIComponent("Halo PT Wijaya Abi Perkasa, saya tertarik dengan proyek developer Anda.");
+                    const renovMsg = encodeURIComponent("Halo PT Wijaya Abi Perkasa, saya tertarik dengan layanan renovasi Anda.");
+                    const arsitekMsg = encodeURIComponent("Halo PT Wijaya Abi Perkasa, saya tertarik dengan jasa desain arsitek Anda.");
+                    const surveyMsg = encodeURIComponent("Halo PT Wijaya Abi Perkasa, saya ingin menjadwalkan survei gratis untuk renovasi.");
+                    
+                    let currentMsg;
+                    if (view === 'developer') {
+                        currentMsg = devMsg;
+                    } else if (view === 'renovasi') {
+                        currentMsg = renovMsg;
+                    } else {
+                        currentMsg = arsitekMsg;
+                    }
+
+                    // [PERBAIKAN BUG JS] Memperbaiki kesalahan ketik 'https:/' menjadi 'https://'
+                    if (floatWhatsappBtn) floatWhatsappBtn.href = `https://wa.me/${whatsappNumber}?text=${currentMsg}`;
+                    if (mobileWhatsappBtn) mobileWhatsappBtn.href = `https://wa.me/${whatsappNumber}?text=${currentMsg}`;
+                    if (renovasiSurveyBtn) renovasiSurveyBtn.href = `https://wa.me/${whatsappNumber}?text=${surveyMsg}`;
+                    
+                    const arsitekContactLink = qs('#ars-contact a[href*="wa.me"]');
+                    if (arsitekContactLink) arsitekContactLink.href = `https://wa.me/${whatsappNumber}?text=${arsitekMsg}`;
+                }
+
+                function switchView(view) {
+                    const isDeveloper = view === 'developer';
+                    const isRenovasi = view === 'renovasi';
+                    const isArsitek = view === 'arsitek';
+
+                    // 1. Set class di body
+                    body.className = `view-${view}`;
+                    
+                    // 2. Set tombol switcher
+                    devBtns.forEach(btn => btn.classList.toggle('active', isDeveloper));
+                    renovBtns.forEach(btn => btn.classList.toggle('active', isRenovasi));
+                    arsBtns.forEach(btn => btn.classList.toggle('active', isArsitek));
+                    
+                    // 3. Set konten aktif (INI YANG PENTING)
+                    // Pastikan elemen ada sebelum mengganti class
+                    if (devContent) devContent.classList.toggle('active', isDeveloper);
+                    if (renovContent) renovContent.classList.toggle('active', isRenovasi);
+                    if (arsitekContent) arsitekContent.classList.toggle('active', isArsitek);
+                    
+                    // 4. Update link WA
+                    updateWhatsappLinks(view);
+                    // 5. Scroll ke atas
+                    window.scrollTo({ top: 0, behavior: 'auto' });
+                    // 6. Update nav aktif
+                    updateActiveNav();
+                }
+
+                function setupMobileMenu() {
+                    const menuBtn = qs('#menuBtn');
+                    if (!menuBtn) return;
+                    const navOverlay = qs('#navOverlay');
+                    const mobileNav = qs('#mobileNav');
+                    const toggleMenu = () => {
+                        const isOpen = body.classList.toggle('menu-open');
+                        menuBtn.setAttribute('aria-expanded', String(isOpen));
+                    };
+                    menuBtn.addEventListener('click', toggleMenu);
+                    navOverlay.addEventListener('click', toggleMenu);
+                    mobileNav.addEventListener('click', (e) => {
+                        if (e.target.closest('a') && !e.target.closest('.view-switcher')) {
+                            toggleMenu();
+                        }
+                    });
+                }
+
+                function updateActiveNav() {
+                    let activePrefix;
+                    if (body.classList.contains('view-developer')) {
+                        activePrefix = 'dev-';
+                    } else if (body.classList.contains('view-renovasi')) {
+                        activePrefix = 'renov-';
+                    } else {
+                        activePrefix = 'ars-';
+                    }
+                    
+                    const sections = qsa(`main section[id^="${activePrefix}"]`);
+                    let currentId = '';
+                    const headerHeight = qs('header')?.offsetHeight || 80;
+                    
+                    sections.forEach(section => {
+                        if (section.offsetTop <= window.scrollY + headerHeight + 50) {
+                            currentId = section.id;
+                        }
+                    });
+
+                    qsa('.desktop-nav a, .mobile-nav a').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${currentId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+
+                function setupScrollAnimations() {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('visible');
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    }, { threshold: 0.1 });
+                    qsa('[data-reveal]').forEach(el => observer.observe(el));
+                }
+
+                function setupRabCalculator() {
+                    const form = qs('#calcForm');
+                    if (!form) return;
+                    const BASE = { ringan: 350000, sedang: 700000, berat: 1200000 };
+                    const MULTIPLIERS = { material: { standar: 1, premium: 1.3 } };
+                    const resultEl = qs('#calcResult');
+                    const formatRupiah = (n) => new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(n);
+                    const calculate = () => {
+                        const fd = new FormData(form);
+                        const luas = parseFloat(fd.get('luas')) || 0;
+                        const tingkat = fd.get('tingkat');
+                        const kualitas = fd.get('kualitas');
+                        const total = (luas && tingkat && kualitas) ? Math.round(luas * BASE[tingkat] * MULTIPLIERS.material[kualitas]) : 0;
+                        resultEl.textContent = formatRupiah(total);
+                    };
+                    form.addEventListener('input', calculate);
+                    calculate();
+                }
+
+                function setupGallerySlider() {
+                    const track = qs('#galleryTrack');
+                    if (!track) return;
+                    const slides = Array.from(track.children);
+                    const prevBtn = qs('#prevBtn');
+                    const nextBtn = qs('#nextBtn');
+                    const dotsNav = qs('#galleryDots');
+                    let currentIndex = 0;
+                    
+                    if (slides.length === 0) return;
+
+                    slides.forEach((_, i) => {
+                        const dot = document.createElement('button');
+                        dot.setAttribute('aria-label', `Lihat gambar ${i + 1}`);
+                        dotsNav.appendChild(dot);
+                    });
+                    
+                    const dots = Array.from(dotsNav.children);
+
+                    const goToSlide = (index) => {
+                        if (index < 0 || index >= slides.length) return;
+                        track.scrollTo({ left: slides[index].offsetLeft, behavior: 'smooth' });
+                        currentIndex = index;
+                        updateButtonsAndDots();
+                    };
+
+                    const updateButtonsAndDots = () => {
+                        dots.forEach((dot, i) => dot.classList.toggle('active', i === currentIndex));
+                        prevBtn.disabled = currentIndex === 0;
+                        nextBtn.disabled = currentIndex === slides.length - 1;
+                    };
+
+                    prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1));
+                    nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
+                    dots.forEach((dot, i) => dot.addEventListener('click', () => goToSlide(i)));
+
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                const newIndex = slides.indexOf(entry.target);
+                                if (newIndex !== currentIndex) {
+                                    currentIndex = newIndex;
+                                    updateButtonsAndDots();
+                                }
+                            }
+                        });
+                    }, { root: track, threshold: 0.6 });
+                    
+                    slides.forEach(slide => observer.observe(slide));
+                    updateButtonsAndDots();
+                }
+
+                function setupHeaderScroll() {
+                    const header = qs('#pageHeader');
+                    if (!header) return;
+                    window.addEventListener('scroll', () => {
+                        header.classList.toggle('scrolled', window.scrollY > 10);
+                    }, { passive: true });
+                }
+                
+                // --- INISIALISASI ---
+                
+                qs('#year').textContent = new Date().getFullYear();
+                
+                // Tambahkan event listener ke tombol
+                devBtns.forEach(btn => btn.addEventListener('click', () => switchView('developer')));
+                renovBtns.forEach(btn => btn.addEventListener('click', () => switchView('renovasi')));
+                arsBtns.forEach(btn => btn.addEventListener('click', () => switchView('arsitek')));
+                
+                // Jalankan fungsi-fungsi lainnya
+                setupMobileMenu();
+                setupScrollAnimations();
+                setupRabCalculator();
+                setupGallerySlider();
+                setupHeaderScroll();
+                
+                /*
+                 * [PERBAIKAN KONTEN HILANG]
+                 * Karena HTML SEKARANG sudah memiliki default class
+                 * (body.view-developer dan #developerContent.active),
+                 * kita tidak perlu memanggil switchView() saat load.
+                 * Kita hanya perlu memastikan link WA sudah benar untuk state awal.
+                */
+                updateWhatsappLinks('developer');
+                updateActiveNav(); // Untuk highlight nav 'Beranda'
+
+            }); // Akhir dari DOMContentLoaded
+        })();
+    </script>
+</body>
+</html>
